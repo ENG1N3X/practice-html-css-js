@@ -1,9 +1,36 @@
-.header
-    max-width: 1200px
-    margin: 0 auto
-    width: 100%
-    margin-bottom: 40px
+#accordion
+    min-height: 500px
+    
+.accordionItem
+    background: #eee
+    cursor: pointer
+    margin-bottom: 10px
+    h4
+        font-size: 30px
+        padding: 10px 20px
+        background: #ccc
+        margin-bottom: 0
+        transition: color .5s
 
-.headerTitle
-    color: red
-    text-align: center
+    .content
+        padding: 0 20px
+
+        opacity: .8
+        height: 0
+        max-height: 0
+        overflow: hidden
+        transition: .4s ease-in-out
+        p
+            font-size: 20px
+            margin-bottom: 0
+    &.active
+        h4
+            color: green
+        .content
+            padding:
+                top: 10px
+                bottom: 10px
+            max-height: 500px
+            height: 100%
+            opacity: 1
+            overflow: visible
