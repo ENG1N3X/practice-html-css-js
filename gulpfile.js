@@ -63,7 +63,7 @@ gulp.task("build", async () => {
   gulp.src("src/*.html").pipe(gulp.dest("build/"));
   gulp.src("src/assets/css/*.css").pipe(gulp.dest("build/assets/css/"));
   gulp.src("src/assets/js/*.js").pipe(gulp.dest("build/assets/js/"));
-  gulp.src("src/assets/img").pipe(gulp.dest("build/assets/"));
+  gulp.src("src/assets/img/**/*.*").pipe(gulp.dest("build/assets/img/"));
 });
 
 gulp.task("watch", function () {
