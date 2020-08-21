@@ -1,2 +1,11 @@
-header.header
-    h1.headerTitle Hello from header!
+header.container.p-2
+    .row
+        .col-12.text-right(style="z-index: 101;")
+            button.btn.headerBtn-menu
+                img(src="./assets/img/menu.svg", alt="menu")
+        .col-12.headerNav.hide
+            nav.nav
+                a(href="#!").nav-link Главная
+                a(href="#!").nav-link Блог
+                a(href="#!").nav-link Новости
+                a(href="#!").nav-link О сайте

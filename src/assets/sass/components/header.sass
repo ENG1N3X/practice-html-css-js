@@ -1,9 +1,44 @@
-.header
-    max-width: 1200px
-    margin: 0 auto
-    width: 100%
-    margin-bottom: 40px
+.headerBtn-menu
+    padding: 0
+    img
+        width: 26px
+        height: 26px
 
-.headerTitle
-    color: red
-    text-align: center
+.headerNav
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    min-height: 100vh
+    z-index: 100
+    padding: 0
+    background: orange
+    transition: 1s
+    .nav
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+        .nav-link
+            background: lightblue
+            max-width: 400px
+            width: 100%
+            text-align: center
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1.5px
+            padding: 15px 0
+            border: 1px solid red
+            color: red
+            transition: .3s
+            &:not(:last-child)
+                margin-bottom: 20px
+            &:hover
+                background: orange
+                border-color: #ffffff
+                color: #ffffff
+
+    &.hide
+        transform: translateX(-100%)

@@ -1,8 +1,6 @@
-// const social = document.querySelector(".headerSocial");
-// const socialList = social.querySelector(".headerSocial__list");
-// const button = social.querySelector("#button");
+const headerNav = document.querySelector(".headerNav");
+const headerNavBtn = document.querySelector(".headerBtn-menu");
 
-// button.addEventListener("click", function () {
-//  socialList.classList.toggle("active");
-//  button.classList.toggle("active");
-// });
+headerNavBtn.addEventListener("click", function () {
+  headerNav.classList.toggle("hide");
+});
